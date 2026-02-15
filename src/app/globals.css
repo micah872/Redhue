@@ -33,4 +33,32 @@ body {
   color: var(--text-primary);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   min-height: 100dvh;
+  overflow: hidden;
+}
+
+/* Leaflet overrides for dark theme */
+.leaflet-container {
+  background: var(--bg-primary) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px !important;
+}
+
+/* Hide scrollbar but allow scrolling in drawer */
+.overscroll-contain::-webkit-scrollbar {
+  width: 3px;
+}
+.overscroll-contain::-webkit-scrollbar-track {
+  background: transparent;
+}
+.overscroll-contain::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* Fire marker pulse animation */
+@keyframes fire-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
 }

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Redhue — AI Wildfire Assistant",
-  description: "Camera-first decision support for wildfire firefighters",
+  description: "Real-time wildfire situational awareness for Incident Commanders",
 };
 
 export const viewport: Viewport = {
